@@ -13,14 +13,14 @@ module.exports = {
     // },
     devtool:'inline-source-map',
     devServer:{
-        contentBase:'/',//设置服务根目录
-        hot:true
+        contentBase:__dirname,//设置服务根目录
+        hot:true,
+        inline:true
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),//build 时清空相应缓存文件夹
         new HtmlWebpackPlugin({
-            filename:'index.html',
-            title: 'Development',
+            template:__dirname+"/index.html"
         }),
         // new webpack.ProvidePlugin({
         //     $:'jquery',
@@ -31,7 +31,7 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath:'/'
+        publicPath:"/"
     },
     module:{
         loaders:[

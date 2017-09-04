@@ -5,8 +5,10 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --progress --watch",
-    "start": "webpack-dev-server --open",
-    "server": "node server.js"
+    "start": "webpack-dev-server --inline --open",
+    "server": "node server.js",
+    "sass-watch":"compass watch",
+    "web-start":"npm run build && npm run sass-watch"
   },
   "author": "",
   "license": "ISC",
