@@ -6,6 +6,4 @@
 
 ## 2.安装sass
 
-依次安装
-
-[]: https://www.ruby-lang.org/zh_cn/documentation/installation/	"ruby"
+依次安装 [ruby](https://www.ruby-lang.org/zh_cn/documentation/installation/ )
